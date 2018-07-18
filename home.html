@@ -22,12 +22,20 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 
-            <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Raleway:700,100,400|Roboto:400,700|Playfair+Display+SC:400,700'
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Raleway:700,100,400|Roboto:400,700|Playfair+Display+SC:400,700'
                 rel='stylesheet' type='text/css'>
+
+    <style>
+        body{
+            display:none;
+        }
+    </style>
 </head>
 
-<body>
+<body id='body'>
+    <img id = "loadLogo" style="width:100vw; height:100vh; padding-left:20vw; padding-top:20vh; padding-bottom:30vh; padding-right:20vw; background-color:black;" src="assets/img/logo.png"/>
 
+    <div id="loadContainer" style="position:absolute; top:0px; left:0px; width:100%">
     <!--   core js files    -->
     <script src="assets/js/jquery.min.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.js" type="text/javascript"></script>
@@ -43,7 +51,7 @@
                     <span class="icon-bar bar3"></span>
                 </button>
                 <a href="#top" style="opacity:1;">
-                    <img style="width:auto; height:70px; padding:10px;" src="assets/img/logo.png"/>
+                    <img style="width:auto; height:90px; padding:10px;" src="assets/img/logo.png"/>
                 </a>
             </div>
             <div class="collapse navbar-collapse">
@@ -53,10 +61,16 @@
                         <a href="#about">About Us</a>
                     </li>
                     <li>
-                        <a href="#entrepreneurs">Our Entrepreneurs</a>
+                        <a href="#team">Team</a>
                     </li>
                     <li>
-                        <a href="#contact">Submit a Pitch</a>
+                        <a href="#investments">Investments</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#services">Services</a>
+                    </li> -->
+                    <li>
+                        <a href="#contact">Contact Us</a>
                     </li>
                     <li>
                         <a href="#blog">Blog</a>
@@ -93,14 +107,20 @@
     </div>
 
 
-    <div id="about" class="section">
+    <div id="about" class="section" style="padding-bottom: 0px">
         <div style="padding-top: 30px;"></div>
         <div class="container">
             <div class="row">
                 <div class="title-area">
                     <h2>About Us</h2>
                     <div class="separator separator-danger">✻</div>
-                    <p class="description">We invest in people, not products.</p>
+                    <p class="description">Entrada means "the entrance". It also means "a journey into unexplored territory".
+                         We're an early stage accelerator firm that helps companies make the transition from a "scrappy startup" 
+                         to a "real company" – one that meets the specific criteria and milestones expected by professional venture
+                         capitalists.
+
+                        
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -110,7 +130,8 @@
                             <i class="pe-7s-graph1"></i>
                         </div>
                         <h3>Years of Expertise</h3>
-                        <p class="description">We understand the process of entrepreneurship and will provide the right help at the right times. </p>
+                        <p class="description">We are veteran angel investors and entrepreneurs who have years of experience and have
+                             been on both sides of the fundraising table.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -119,34 +140,97 @@
                             <i class="pe-7s-note2"></i>
                         </div>
                         <h3>Proven Record</h3>
-                        <p class="description">We have a proven track record of successful high-scale investments. Meet <a href="#entrepreneurs">our entrepreneurs</a> to learn more</p>
+                        <p class="description">We have raised hundreds of millions of dollars in equity investment and 
+                            have also invested millions of our own in startups. See <a href="#investments">our investments</a> to learn more</p>
                     </div>
                 </div>
-
-
                 <div class="col-md-4">
                     <div class="info-icon">
                         <div class="icon text-danger">
                             <i class="pe-7s-rocket"></i>
                         </div>
                         <h3>Risk Takers</h3>
-                        <p class="description">If we thing an idea has the potential to succeed, we're ready and willing to take risk in the early stage to see it grow. </p>
+                        <p class="description">If we think an idea has the potential to succeed, we're ready and willing to take that risk 
+                            in the early stage to help it grow into a Stage A ready company.
+                        </p>
                     </div>
                 </div>
-
-                <!-- <div class="col-md-4">
-                    <div class="info-icon">
-                        <div class="icon text-danger">
-                            <i class="pe-7s-user"></i>
-                        </div>
-                        <h3>Personal Interest</h3>
-                        <p class="description">We will help coach and train you throughout your companies growth. </p>
-                    </div>
-                </div> -->
             </div>
         </div>
-    </div>
+        <div id="services" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="title-area">
+                            <h2>Our Services</h2>
+                            <div class="separator separator-danger">✻</div>
+                            <p class="description">We invest in people, not products. We won't just write a check, 
+                                    we'll provide you with the aid and services you need to bring your company to that next level.
+                                    Here are just a few of the things our experts can help you with:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="info-icon">
+                                <div class="icon text-danger">
+                                    <i class="pe-7s-portfolio"></i>
+                                </div>
+                                <h3>Pitch and Pitch Deck Perfection</h3>
+                                <p class="description">Please describe</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-icon">
+                                <div class="icon text-danger">
+                                    <i class="pe-7s-cash"></i>
+                                </div>
+                                <h3>Talent acquisition</h3>
+                                <p class="description">Please describe</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-icon">
+                                <div class="icon text-danger">
+                                    <i class="pe-7s-wallet"></i>
+                                </div>
+                                <h3>Cap Table Clean Up</h3>
+                                <p class="description">Please describe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="info-icon">
+                                <div class="icon text-danger">
+                                    <i class="pe-7s-user"></i>
+                                </div>
+                                <h3>Intellectual Property Protection</h3>
+                                <p class="description">Please describe</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-icon">
+                                   <div class="icon text-danger">
+                                        <i class="pe-7s-wristwatch"></i>
+                                    </div>
+                                    <h3>KPI Determination and Monitoring</h3>
+                                    <p class="description">Please describe</p>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-icon">
+                                <div class="icon text-danger">
+                                        <i class="pe-7s-diamond"></i>
+                                </div>
+                                <h3>Intro to Appropriate VC Firms</h3>
+                                <p class="description">Please describe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
+    </div>
 
     <div id="team" class="section section-our-team-freebie">
         <div class="parallax filter filter-color-black">
@@ -158,7 +242,13 @@
                         <div class="title-area">
                             <h2>Our Team</h2>
                             <div class="separator separator-danger">✻</div>
-                            <p class="description">Entrada means "the entrance". It also means "the start of an unplanned journey".</p>
+                            <p class="description">
+                                    Each and every person on our team is prepared to help your company develop and mature from an
+                                    early stage startup to a company ready for professional investment.
+                                    As individuals, we have led the process of raising substantial capital from the world’s leading investors,  
+                                    led our own companies to IPO’s and acquisitions, and led ourselves and our investors to 
+                                    over a billion dollars worth in exit value. Now we've come together to help you fulfill your dream.
+                            </p>
                         </div>
                     </div>
 
@@ -222,11 +312,10 @@
     </div>
 
 
-    <div id="entrepreneurs" class="section section-our-clients-freebie">
+    <div id="investments" class="section section-our-clients-freebie">
         <div class="container">
             <div class="title-area">
-                <h5 class="subtitle text-gray">Meet some of</h5>
-                <h2>Our Entrepreneurs</h2>
+                <h2>Our Investments</h2>
                 <div class="separator separator-danger">∎</div>
             </div>
 
@@ -295,7 +384,6 @@
         </div>
     </div>
 
-
     <div id="contact" class="section section-small section-get-started">
         <div class="parallax filter">
             <div class="image" style="background-image: url('assets/img/man-at-desk.jpg')">
@@ -308,7 +396,7 @@
                 </div>
 
                 <div class="button-get-started">
-                    <a href="submit_pitch.html" class="btn btn-danger btn-fill btn-lg">Submit a Pitch</a>
+                    <a href="contact.html" class="btn btn-danger btn-fill btn-lg">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -460,10 +548,16 @@
                                     <a href="#">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Our Portfolio</a>
+                                        <a href="#">Our Team</a>
                                 </li>
                                 <li>
-                                    <a href="#">Submit a Pitch</a>
+                                    <a href="#">Our Investements</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">Our Services</a>
+                                </li> -->
+                                <li>
+                                    <a href="#">Contact Us</a>
                                 </li>
                                 <li>
                                     <a href="#">News & Blog</a>
@@ -541,7 +635,7 @@
             </div>
         </div>
     </footer>
-
+    </div>
 </body>
 
 <!--  js library for devices recognition -->
@@ -558,6 +652,19 @@
 
 <!-- Smooth scrolling script -->
 <script type="text/javascript"> 
+
+    window.onload = function(){
+        document.getElementById("body").style.display = "block";
+        $("#loadContainer").hide();
+        window.setTimeout(function(){
+            $("#loadLogo").fadeOut(5000, function(){
+            $("#loadLogo").hide();
+             })
+            $("#loadContainer").fadeIn(5000);
+        }, 500);
+    };
+    
+
     // Select all links with hashes
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
