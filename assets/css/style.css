@@ -1433,7 +1433,7 @@ a,
 }
 
 .navbar-transparent {
-  /* padding-top: 15px; */
+  padding-top: 15px;
   background-color: transparent;
   border-bottom: 1px solid transparent;
 }
