@@ -17,6 +17,10 @@
 }
 
 
+.investment-logo {
+  opacity: 1 !important;
+}
+
 
  .navbar ul li a {
    color: rgba(23, 39, 39, 0.85) !important;
