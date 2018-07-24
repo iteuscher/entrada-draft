@@ -222,7 +222,9 @@
     <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <div class="container">
             <div class="navbar-header">
-                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                <button id="menu-toggle" type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar bar1"></span>
                     <span class="icon-bar bar2"></span>
@@ -232,7 +234,7 @@
                     <img style="width:auto; height:90px; padding:10px;" src="assets/img/logo.png"/>
                 </a>
             </div>
-            <div class="collapse navbar-collapse">
+            <div id="navigation"class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
 
                     <li>
@@ -345,9 +347,14 @@
                     <div class="title-area">
                         <h2>Our Services</h2>
                         <div class="separator separator-danger">✻</div>
-                        <p class="description">We invest in people, not products. We won't just write a check, 
-                                we'll provide you with the aid and services you need to bring your company to that next level.
-                                Here are just a few of the things our experts can help you with:
+                        <p class="description">
+                            
+                            We invest in people, not products. We won't just write checks, 
+                            or look at dozens of startups each quarter, rather we work personally and intensely 
+                            with no more than 10 companies each year helping them develop from late seed stage companies 
+                            to their first round of professional financing. 
+                            Here are a few of the things our team helps with:
+
                         </p>
                     </div>
                 </div>
@@ -515,7 +522,7 @@
                 <li>
                     <a href="#testimonial2" role="tab" data-toggle="tab">
                         <div class="image-clients">
-                            <img alt="Tammy Camp" class="img-circle" src="assets/img/tammycamp.jpg"/>
+                            <img alt="Tammy Camp" class="img-circle" src="assets/img/tammycamp2.jpg"/>
                         </div>
                     </a>
                 </li>
@@ -545,7 +552,7 @@
                     <div style="opacity:1;">
                         <h2>Tammy Camp</h2>
 
-                            <a class="investment-logo" href="https://www.procore.com/" target="_blank">
+                            <a class="investment-logo" href="https://stronghold.co/" target="_blank">
                                 <svg style="width:300px; height:auto; padding:10px;"
                                     xmlns:dc="http://purl.org/dc/elements/1.1/"
                                     xmlns:cc="http://creativecommons.org/ns#"
@@ -1110,12 +1117,14 @@
                             </a>
 
                     </div>
-                    <p class="description">An entrepreneur since the age of 21, Tammy has taken part in numerous successful business endeavors, facilitating over $1 Billion+ in sales. Tammy has collaborated with organizations such as Lloyds TSB, Hotwire.com, Holiday Autos and eBay to scale their businesses on an international level. Tammy also managed media buys resulting in a capital performance track record of 60% return on investment, outperforming the world’s top hedge funds 3 to 1.
-                            <br>
-                            Tammy also serves as an advisor to numerous startups in the security, consumer Internet and executive research fields. Tammy has been featured in Forbes, USA Today, NPR and the International Business Times. She has also served as a United States delegate for the 2013 YEA G20 Summit in Moscow, Russia and participant for the US Department of State’s “New Beginning: Entrepreneurship and Business Innovation” program, which hosted the top entrepreneurs from over 28 countries.
-                            <br>
-                            Tammy is a graduate of the GSP11 program at Singularity University at NASA Ames and holds a world record in kiteboarding.               
-                            </p>
+                    <p class="description">An entrepreneur since the age of 21, Tammy has taken part in numerous successful business endeavors, 
+                            she also manages media buys and serves as an advisor to numerous startups in the security, consumer Internet and executive research fields.
+                            After graduating the GSP11 program at Singularity University at NASA Ames and serving as a United States delegate for the 2013 YEA G20 Summit in Moscow, Russia 
+                            and participant for the US Department of State’s “New Beginning: Entrepreneurship and Business Innovation” program, 
+                            she combined her experiences to found Stronghold, a distributed exchange which offers the ability to trade cryptocurrency.
+                            She holds a world record in kiteboarding, has been featured in Forbes, USA Today, NPR and the International Business Times and was recently included in Forbes 40 under 40. 
+                    </p>
+                            
                 </div>
                 <div class="tab-pane" id="testimonial3">
                     <div style="opacity:1;">
@@ -1298,7 +1307,6 @@
             
             <!--  Just for demo	 -->
             <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
-            
             <script>
 
                 $().ready(function () {
@@ -1318,6 +1326,7 @@
                     }
                 });
             </script> -->
+
         </div>
     </div>
 
@@ -1425,6 +1434,7 @@
             </div>
         </div>
     </footer>
+
     </div>
 </body>
 
@@ -1440,7 +1450,7 @@
 <!-- UI Kit script -->
 <script type="text/javascript" src="assets/js/uikit.js"></script>
 
-<!-- Smooth scrolling script -->
+<!-- Logo load script -->
 <script type="text/javascript"> 
 
     window.onload = function(){
@@ -1454,43 +1464,8 @@
         }, 500);
     };
     
-
-    // Select all links with hashes
-    $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function (event) {
-            // On-page links
-            if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                &&
-                location.hostname == this.hostname
-            ) {
-                // Figure out element to scroll to
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                // Does a scroll target exist?
-                if (target.length) {
-                    // Only prevent default if animation is actually gonna happen
-                    event.preventDefault();
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000, function () {
-                        // Callback after animation
-                        // Must change focus!
-                        var $target = $(target);
-                        $target.focus();
-                        if ($target.is(":focus")) { // Checking if the target was focused
-                            return false;
-                        } else {
-                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                            $target.focus(); // Set focus again
-                        };
-                    });
-                }
-            }
-        });
 </script>
+
+<script type="text/javascript" src="assets/js/scrolling.js"></script>
 
 </html>
