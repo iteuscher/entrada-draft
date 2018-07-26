@@ -10,10 +10,10 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
 
-            <link href="assets/css/cards.css" rel="stylesheet" />
-            <link href="assets/css/uikit.css" rel="stylesheet" />
+    <link href="assets/css/cards.css" rel="stylesheet" />
+    <link href="assets/css/uikit.css" rel="stylesheet" />
 
-    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
@@ -22,35 +22,93 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 
-            <link href='https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:700,100,400|Roboto:400,700|Playfair+Display+SC:400,700'
-                rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:700,100,400|Roboto:400,700|Playfair+Display+SC:400,700'
+        rel='stylesheet' type='text/css'>
 </head>
+
 <body style="height: 100%;">
+
+
+    <div id="content" style="position:absolute; top:0px; left:0px; width:100%">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a href="index.html" style="opacity:1;">
+                        <img style="width:auto; height:90px; padding:10px;" src="assets/img/logo.png" />
+                    </a>
+                </div>
+                <div id="navigation" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+                            <a href="team.html">Team</a>
+                        </li>
+                        <li>
+                            <a href="investments.html">Investments</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="jumbotron" style="padding:2%; text-align: center">
+            <h1 class="display-4">Contact Us</h1>
+            <hr class="my-4" style="border-color: #448f49; border-width: 3px; border-radius: 30px; width: 50%; margin: 0 auto">
+            <br>
+            <p class="lead">Read below to discover the best ways to get in contact with Entrada. </p>
+        </div>
+
         <div class="section section-large section-get-started">
-                <div class="parallax filter">
-                    <div class="image" style="background-image: url('assets/img/man-at-desk.jpg'); width:100%; height:100%;">
+            <div class="parallax filter">
+                <div class="image" style="background-image: url('assets/img/man-at-desk.jpg'); width:100%; height:100%;">
+                </div>
+                <div class="container" style="width:100%; height:100%;">
+                    <div class="title-area">
+                        <h2 class="text-white">Looking to get started on your journey?</h2>
+                        <div class="separator line-separator">♦</div>
+                        <p class="description">
+                            Bellow you'll see an opportunity to submit your pitch to us, and one of our collegues will take a look. However, our preference
+                            would be to receive something from someone we know at the firm. Our lives are quite busy and
+                            there are lots of great startups out there, so finding a more personal connection is a much more
+                            meaningful way to introduce yourself and demonstrate your desire to be a part of the Entrada
+                            family. Wheather or not you can find a more personal route we'd still love to hear from you.
+                            So submit your pitch here.
+                        </p>
                     </div>
-                    <div class="container" style="width:100%; height:100%;">
-                        <div class="title-area">
-                            <h2 class="text-white">Looking to get started on your journey?</h2>
-                            <div class="separator line-separator">♦</div>
-                            <p class="description"> 
-                                Bellow you'll see an opportunity to submit your pitch to us, and one of our collegues
-                                will take a look. However, our preference would be to receive something from someone we know
-                                at the firm. Our lives are quite busy and there are lots of great startups out there, so finding
-                                a more personal connection is a much more meaningful way to introduce yourself and demonstrate
-                                your desire to be a part of the Entrada family.
-                                
-                                Wheather or not you can find a more personal route we'd still love to hear from you. So submit your
-                                pitch here.
-                            </p>
-                        </div>
-        
-                        <div class="button-get-started">
-                            <a href="submit_pitch.html" target = "_blank" class="btn btn-danger btn-fill btn-lg">Submit A Pitch</a>
-                        </div>
+
+                    <div class="button-get-started">
+                        <a href="submit_pitch.html" target="_blank" class="btn btn-danger btn-fill btn-lg">Submit A Pitch</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <style>
+        .jumbotron {
+            background-color: white;
+            box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.125);
+            margin-top: 6em;
+            margin-bottom: 0em;
+        }
+    </style>
 </body>
+
 </html>
